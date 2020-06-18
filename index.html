@@ -32,6 +32,18 @@
             padding-bottom: 4vw;
         }
 
+        #testimonials p{
+            font-style: italic;
+        }
+        #testimonials i, #services i, #about i{
+            float: left;
+            padding-right: 10px;
+        }
+
+        footer {
+            padding-bottom: 17px;
+        }
+
         .image{
             max-height: 300px;
             width: 400px;
@@ -50,23 +62,22 @@
             <nav class="nav-wrapper blue accent-1">
                 <div class="container">
                     <a href="#" class="brand-logo valign-wrapper grey-text text-darken-3"><i class="fa fa-graduation-cap valign-wrapper"></i>Dr Martin Brown<span class="tagline grey-text text-darken-2 hide-on-med-and-down">Private science tuition</span></a>
-                    <a href="#" class="sidenav-trigger grey-text text-darken-3" data-target="mobile-menu">
-                        <i class="material-icons">menu</i>
-                    </a>
+                    <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons grey-text text-darken-3">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="#about" class="grey-text text-darken-3">About</a></li>
                         <li><a href="#services" class="grey-text text-darken-3">Services</a></li>
                         <li><a href="#testimonials" class="grey-text text-darken-3">Testimonials</a></li>
                         <li><a href="#contact" class="grey-text text-darken-3">Contact</a></li>
                     </ul>
-                    <ul class="sidenav grey-text text-darken-3" id="mobile-menu">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
                 </div>
             </nav>
+        </div>
+        <ul class="sidenav blue accent-1" id="mobile-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
             <div class="parallax-container">
                 <div class="parallax">
                     <img src="pasta.jpg" class="responsive-img">
@@ -77,10 +88,10 @@
     
 
     <!-- about -->
-    <div class="container section">
+    <div class="container section" id="about">
         <div class="row">
             <div class="col s12 l5">
-                <h4>About Me</h4> <br>
+                <h4><i class="fas fa-user-graduate valign-wrapper"></i>About Me</h4> <br>
                 <img src="pasta.jpg" class="image">
             </div>
             <div class="col s12 l5 offset-l2">
@@ -108,10 +119,10 @@
     </div>
 
     <!-- services -->
-    <div class="container section">
+    <div class="container section" id="services">
         <div class="row">
             <div class="col s12 l5">
-                <h4>Services</h4>
+                <h4><i class="fas fa-book valign-wrapper"></i>Services</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati temporibus unde 
                     incidunt architecto commodi consectetur maxime tenetur, perspiciatis consequatur quos 
                     expedita sed eveniet eaque maiores possimus!
@@ -119,7 +130,15 @@
             </div>
             <div class="col s12 l5 offset-l2">
                 <ul class="collapsible popout">
-                    <li>
+                    <li id="KS2">
+                        <div class="collapsible-header" >
+                            Key Stage 2
+                        </div>
+                        <div class="collapsible-body">
+                            Science<br> Online and in local area.
+                        </div>
+                    </li>
+                    <li id="KS3" class="">
                         <div class="collapsible-header">
                             Key Stage 3
                         </div>
@@ -127,7 +146,7 @@
                             Chemistry, biology, physics. <br> Online and in local area.
                         </div>
                     </li>
-                    <li>
+                    <li id="GCSE" class="">
                         <div class="collapsible-header">
                             GCSE
                         </div>
@@ -135,7 +154,7 @@
                             Chemistry, biology, physics. <br> Online and in local area.
                         </div>
                     </li>
-                    <li>
+                    <li id="AL" class="">
                         <div class="collapsible-header">
                             A level
                         </div>
@@ -143,7 +162,7 @@
                             Chemistry, biology. <br> Online and in local area.
                         </div>
                     </li>
-                    <li>
+                    <li id="IB" class="">
                         <div class="collapsible-header">
                             International Baccalaureate
                         </div>
@@ -156,9 +175,61 @@
         </div>
     </div>
     <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="pasta.jpg" class="responsive-img">
+        </div>
+    </div>
 
     <!-- testimonials -->
     <!-- use cards -->
+    <div class="container section" id="testimonials">
+        <h4><i class="fas fa-comment valign-wrapper"></i>Testimonials</h4>
+        <div class="row">
+            <div class="col s12 l4">
+                <div class="card">
+                    <div class="card-content">
+                        <h5 class="card-title"><i class="far fa-grin valign-wrapper"></i> Name</h5>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati temporibus unde 
+                            incidunt architecto commodi consectetur maxime tenetur, perspiciatis consequatur quos 
+                            expedita sed eveniet eaque maiores possimus!"
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#services" class="blue-text text-accent-1" id="service-ks3">KS3 tuition</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4">
+                <div class="card">
+                    <div class="card-content">
+                        <h5 class="card-title"><i class="far fa-thumbs-up valign-wrapper"></i> Name</h5>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati temporibus unde 
+                            incidunt architecto commodi consectetur maxime tenetur, perspiciatis consequatur quos 
+                            expedita sed eveniet eaque maiores possimus!"
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#services" class="blue-text text-accent-1" id="service-gcse">GCSE tuition</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4">
+                <div class="card">
+                    <div class="card-content">
+                        <h5 class="card-title"><i class="far fa-star valign-wrapper"></i> Name</h5>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati temporibus unde 
+                            incidunt architecto commodi consectetur maxime tenetur, perspiciatis consequatur quos 
+                            expedita sed eveniet eaque maiores possimus!"
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#services" class="blue-text text-accent-1" id="service-ib">IB tuition</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- contact -->
 
@@ -172,9 +243,31 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-        $('.sidenav').sidenav();
-        $('.parallax').parallax();
-        $('.collapsible').collapsible();
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.parallax').parallax();
+            $('.collapsible').collapsible();
+
+            $('#service-ks2').click(function(){
+                $('.collapsible').collapsible('open', 0);
+            });
+            $('#service-ks3').click(function(){
+                $('.collapsible').collapsible('open', 1);
+            });
+            $('#service-gcse').click(function(){
+                $('.collapsible').collapsible('open', 2);
+            });
+            $('#service-al').click(function(){
+                $('.collapsible').collapsible('open', 3);
+            });
+            $('#service-ib').click(function(){
+                $('.collapsible').collapsible('open', 4);
+            });
+        });
+        
+
+
     </script>
+
 </body>
 </html>
