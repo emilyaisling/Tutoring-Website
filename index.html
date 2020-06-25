@@ -32,21 +32,34 @@
             padding-bottom: 4vw;
         }
 
+        .credit{
+            font-size: x-small;
+        }
+
         #testimonials p{
             font-style: italic;
         }
-        #testimonials i, #services i, #about i{
+        #testimonials i, #services i, #about i, #contact i{
             float: left;
             padding-right: 10px;
+        }
+
+        #contact span{
+            padding-left: 10px;
         }
 
         footer {
             padding-bottom: 17px;
         }
 
+        form{
+            padding-top: 40px;
+            padding-bottom: 130px;
+        }
+
         .image{
             max-height: 300px;
-            width: 400px;
+
         }
         @media screen and (max-width: 1100px){
             span.tagline{
@@ -61,7 +74,7 @@
         <div class="navbar-fixed">
             <nav class="nav-wrapper blue accent-1">
                 <div class="container">
-                    <a href="#" class="brand-logo valign-wrapper grey-text text-darken-3"><i class="fa fa-graduation-cap valign-wrapper"></i>Dr Martin Brown<span class="tagline grey-text text-darken-2 hide-on-med-and-down">Private science tuition</span></a>
+                    <a href="#" class="brand-logo valign-wrapper grey-text text-darken-3"><i class="fa fa-graduation-cap valign-wrapper"></i>Dr Martin Brown<span class="tagline grey-text text-darken-2 hide-on-med-and-down">Private Science Tuition</span></a>
                     <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons grey-text text-darken-3">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="#about" class="grey-text text-darken-3">About</a></li>
@@ -80,19 +93,21 @@
         </ul>
             <div class="parallax-container">
                 <div class="parallax">
-                    <img src="pasta.jpg" class="responsive-img">
+                    <img src="board.jpg" class="responsive-img">
                 </div>
             </div>
-        </div>
+            <div class="credit">
+                <p><span>Photo by <a href="https://unsplash.com/@jeshoots?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">JESHOOTS.COM</a> on <a href="/s/photos/teacher?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
+            </div>
     </header>
     
 
     <!-- about -->
-    <div class="container section" id="about">
+    <div class="container section grey-text text-darken-3 scrollspy" id="about">
         <div class="row">
             <div class="col s12 l5">
                 <h4><i class="fas fa-user-graduate valign-wrapper"></i>About Me</h4> <br>
-                <img src="pasta.jpg" class="image">
+                <img src="photo2.jpg" class="image">
             </div>
             <div class="col s12 l5 offset-l2">
                 <br><br>
@@ -114,12 +129,16 @@
     <!-- parallax -->
     <div class="parallax-container">
         <div class="parallax">
-            <img src="pasta.jpg" class="responsive-img">
+            <img src="study.jpg" class="responsive-img">
         </div>
     </div>
+    <div class="credit">
+        <p><span>Photo by <a href="https://unsplash.com/@alissadeleva?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Alissa De Leva</a> on <a href="/s/photos/education?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
+    </div>
+
 
     <!-- services -->
-    <div class="container section" id="services">
+    <div class="container section grey-text text-darken-3 scrollspy" id="services">
         <div class="row">
             <div class="col s12 l5">
                 <h4><i class="fas fa-book valign-wrapper"></i>Services</h4>
@@ -177,13 +196,16 @@
     <!-- parallax -->
     <div class="parallax-container">
         <div class="parallax">
-            <img src="pasta.jpg" class="responsive-img">
+            <img src="calculator.jpg" class="responsive-img">
         </div>
+    </div>
+    <div class="credit">
+        <p>Photo by Kaboompics .com from Pexels</p>
     </div>
 
     <!-- testimonials -->
     <!-- use cards -->
-    <div class="container section" id="testimonials">
+    <div class="container section grey-text text-darken-3 scrollspy" id="testimonials">
         <h4><i class="fas fa-comment valign-wrapper"></i>Testimonials</h4>
         <div class="row">
             <div class="col s12 l4">
@@ -232,6 +254,21 @@
     </div>
 
     <!-- contact -->
+    <div class="grey darken-3 scrollspy" id="contact">
+        <div class="container section white-text">
+            <h4><i class="fas fa-address-book"></i>Get in touch</h4>
+            <div class="row">
+                <div class="col s12 l5">
+                    <p>Just leave me your name, preferred contact details, and the subject and education level you are interested in.</p>
+                </div>
+                <div class="col s12 l5 offset-l2">
+                    <p><i class="far fa-envelope valign-wrapper"></i>Email<span>mbsciencetutor@gmail.com</span></p>
+                    <p><i class="fas fa-phone"></i>Phone <span>07971293258</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
     <!-- footer -->
     <footer class="page-footer blue accent-1">
@@ -247,6 +284,9 @@
             $('.sidenav').sidenav();
             $('.parallax').parallax();
             $('.collapsible').collapsible();
+            $('.modal').modal();
+            $('select').formSelect();
+            $('.scrollspy').scrollSpy();
 
             $('#service-ks2').click(function(){
                 $('.collapsible').collapsible('open', 0);
