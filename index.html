@@ -18,22 +18,25 @@
         <!-- nav bar -->
         <div class="navbar-fixed">
             <nav class="nav-wrapper blue accent-1">
-                <div class="container">
-                    <a href="#" class="brand-logo valign-wrapper grey-text text-darken-3"><i class="fa fa-graduation-cap valign-wrapper"></i>Dr Martin Brown<span class="tagline grey-text text-darken-2 hide-on-med-and-down">Private Science Tuition</span></a>
-                    <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons grey-text text-darken-3">menu</i></a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="#about" class="grey-text text-darken-3">About</a></li>
-                        <li><a href="#services" class="grey-text text-darken-3">Services</a></li>
-                        <li><a href="#testimonials" class="grey-text text-darken-3">Testimonials</a></li>
-                        <li><a href="#contact" class="grey-text text-darken-3">Contact</a></li>
-                    </ul>
-                </div>
+				<div class="container" id="header-container">
+					<a href="#" id="main-header" class="brand-logo valign-wrapper grey-text text-darken-3"><i class="fa fa-graduation-cap valign-wrapper"></i>
+                    <span class="grey-text text-darken-4">Dr Martin Brown</span>
+					<span class="tagline grey-text text-darken-2 hide-on-med-and-down">Private Science Tuition</span></a>
+					<a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons grey-text text-darken-3">menu</i></a>
+				
+					<ul class="right hide-on-med-and-down">
+						<li><a href="#services" class="grey-text text-darken-3">Services</a></li>
+						<li><a href="#testimonials" class="grey-text text-darken-3">Testimonials</a></li>
+						<li><a href="#about" class="grey-text text-darken-3">About</a></li>
+						<li><a href="#contact" class="grey-text text-darken-3">Contact</a></li>
+					</ul>
+				</div>
             </nav>
         </div>
         <ul class="sidenav blue accent-1" id="mobile-menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#about">Services</a></li>
+            <li><a href="#services">Testimonials</a></li>
+            <li><a href="#testimonials">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
             <div class="parallax-container">
@@ -52,7 +55,7 @@
         <div class="row">
             <div class="col s12 l5">
                 <h4><i class="fas fa-user-graduate valign-wrapper"></i>About Me</h4> <br>
-                <img src="photo.jpg" class="image">
+                <img src="photo.JPG" class="image">
             </div>
             <div class="col s12 l6 offset-l1">
                 <br><br>
@@ -81,15 +84,15 @@
         </div>
     </div>
 
-    <!-- parallax -->
-    <div class="parallax-container">
-        <div class="parallax">
-            <img src="study.jpg" class="responsive-img">
-        </div>
-    </div>
-    <div class="credit">
-        <p><span>Photo by <a class="black-text" href="https://unsplash.com/@alissadeleva?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Alissa De Leva</a> on <a class="black-text" href="/s/photos/education?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
-    </div>
+	<!-- parallax -->
+	<div class="parallax-container">
+		<div class="parallax">
+			<img src="study.jpg" class="responsive-img">
+		</div>
+	</div>
+	<div class="credit">
+		<p><span>Photo by <a class="black-text" href="https://unsplash.com/@alissadeleva?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Alissa De Leva</a> on <a class="black-text" href="/s/photos/education?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
+	</div>
 
 
     <!-- services -->
@@ -97,16 +100,16 @@
         <div class="row">
             <div class="col s12 l5">
                 <h4><i class="fas fa-book valign-wrapper"></i>Services</h4>
+                <ul>
+                    <li>One-to-one tuition in Chemistry, Biology and Physics at GCSE and IGCSE</li>		
+					<li>Double Award and Triple Award Science</li>
+					<li>Chemistry and Biology at A Level and the International Baccalaureate </li>
+					<li>General Science tuition at KS2, KS3, 11-plus and common entrance</li> 
+					<li>All the major examination boards</li>
+                    <li>Highly experienced in teaching international students</li>
+                </ul>
                 <p>
-                    Martin offers exceptional, fully tailored, one-to-one tuition in Chemistry, Biology and 
-                    Physics at GCSE and IGCSE, as well as the Double Award and Triple Award Science 
-                    qualifications. He also offers Chemistry and Biology for both A Level and the International 
-                    Baccalaureate Diploma. In addition, Martin is available for general Science tuition at Key 
-                    Stage 2, Key Stage 3, 11-plus and common entrance. He has worked with all the major examination 
-                    boards and is also highly experienced in teaching international students.
-                </p>
-                <p>
-                    Tuition is available online, and in person in the Denbighshire and Conwy area.
+                    Tuition available online, and in person in the Denbighshire and Conwy area.
                 </p>
             </div>
             <div class="col s12 l5 offset-l2">
@@ -124,7 +127,7 @@
                             Key Stage 3
                         </div>
                         <div class="collapsible-body">
-                            Chemistry, biology and physics.
+                            Chemistry, Biology and Physics.
                         </div>
                     </li>
                     <li id="GCSE" class="">
@@ -174,13 +177,13 @@
                 <div class="card">
                     <div class="card-content">
                         <h5 class="card-title"><i class="far fa-grin valign-wrapper"></i> Year 10 student</h5>
-                        <p>"I have been having one to one lessons with Dr Brown Since starting year 10.
+                        <p>"I have been having one to one lessons with Dr Brown since starting year 10.
 
-                            I have always found all science subjects extremely tricky and hard to understand. 
+                            I have always found all Science subjects extremely tricky and hard to understand. 
                             
                             Dr Brown has certainly changed this for me. His patience, encouragement and love of the subjects have helped me gain a greater and wider understanding, which has certainly helped me improve my grades. 
                             
-                            I look forward to my lessons and I would like to take this opportunity to say thank to Dr Brown for helping me achieve something that I thought was impossible."
+                            I look forward to my lessons and I would like to take this opportunity to say thanks to Dr Brown for helping me achieve something that I thought was impossible."
                         </p>
                     </div>
                     <div class="card-action">
@@ -192,7 +195,7 @@
                 <div class="card">
                     <div class="card-content">
                         <h5 class="card-title"><i class="far fa-thumbs-up valign-wrapper"></i> Year 9 parent</h5>
-                        <p>"Martin is a knowledgable and patient tutor. The tasks and lessons he provides are challenging and engaging and have really helped our son to make excellent progression in his science work. Martin is flexible in his approach and will adapt the lesson to the learner. Highly recommended."
+                        <p>"Martin is a knowledgable and patient tutor. The tasks and lessons he provides are challenging and engaging and have really helped our son to make excellent progression in his Science work. Martin is flexible in his approach and will adapt the lesson to the learner. Highly recommended."
                         </p>
                     </div>
                     <div class="card-action">
@@ -204,10 +207,10 @@
                 <div class="card">
                     <div class="card-content">
                         <h5 class="card-title"><i class="far fa-star valign-wrapper"></i> Year 11 parent</h5>
-                        <p>"I would like to take this opportunity to say a big thank you to Dr Brown. Since starting one to one private tuitions my son has not only developed a greater knowledge and understanding of all three sciences but his confidence has grown in leaps and bounds. 
-                            Subjects which were all difficult for my son are now not only interesting but his grades have improved dramatically.
+                        <p>"I would like to take this opportunity to say a big thank you to Dr Brown. Since starting one to one private tuition my son has not only developed a greater knowledge and understanding of all three Sciences but his confidence has grown in leaps and bounds. 
+                            Subjects that were all difficult for my son are now not only interesting but his grades have improved dramatically.
                             
-                            If you are looking for a tutor, I would have the pleasure of recommending Dr Brown. He brings the subjects to life and is extremely patient and constantly encourages my sons development. 
+                            If you are looking for a tutor, I would have the pleasure of recommending Dr Brown. He brings the subjects to life and is extremely patient and constantly encourages my son's development. 
                             We will be forever in his debt and will continue with the lessons even going into A levels. 
                             Thank you seems such small words for what he has achieved."
                         </p>
